@@ -1,0 +1,46 @@
+COMOANDOS DO GIT:
+- Verificar o status do projeto
+gi status
+
+- Consulta os commits enviados
+git log
+
+- Consultar commits
+git log --oneline
+
+- Deletar arquivo e commit
+git reset --hard HEAD~1
+
+- Deletar a partir de um determinado commit
+git reset --hard <número do commit>, visualizado no git log
+
+- Para recuperar o delete anterior, antes de enviar outro commit
+git pull origin main
+
+- Atualizar o computar com o repositório remoto do github
+git pull origin main
+
+- Push rejeitado
+Normalmente acontece de ser feita uma alteração no remoto e depois de fazer uma alteração no local se for enviar o commit vai dar erro, basta fazer um pull antes e enviar o novo commit local depois
+
+- Copiar um projeto do repositório remoto para o local
+git clone <link do local no github>
+
+- Abrir o projeto pelo git na IDE
+code . <há um espaço entre code e o ponto>
+
+- Adicionar arquivos para comitar
+git add . <há um espaço entre add e o ponto>
+
+- Comitar
+git commit -m <"mensagem do commit">
+
+- Quando houver conflito por alteração no mesmo arquivo no local e no remoto, como resolver, qual considrar?
+o sistema não deixará fazer o comit e informará dentro do código fonte onde será escolhido pelo progtramador e com isso o commit seguira, sendo resolvido esse conflito.
+
+- Sobrescrever um histórico no GitHub (ação destrutiva)
+git push -f
+
+- Como apontar o projeto para outro repositório remoto?
+git remote set-url origin <link do outro github que vc quer ter o projeto registrado>
+git push -u origin main
